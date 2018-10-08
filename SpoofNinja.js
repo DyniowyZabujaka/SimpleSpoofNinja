@@ -734,7 +734,7 @@ bot.on('message', message => {
 });
 
 // BOT LOGIN TO DISCORD
-bot.login(config.token);
+bot.login(process.env.BOT_TOKEN);
 
 // BOT DISCONNECTED
 bot.on('disconnected', function (){
